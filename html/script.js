@@ -5,7 +5,7 @@ window.addEventListener('message', (event) => {
         document.getElementById("coordsX").textContent = `X: ${(data.x).toFixed(2)}`;
         document.getElementById("coordsY").textContent = `Y: ${(data.y).toFixed(2)}`;
         document.getElementById("coordsZ").textContent = `Z: ${(data.z).toFixed(2)}`;
-        document.getElementById("coordsH").textContent = `Z: ${(data.heading).toFixed(2)}`;
+        document.getElementById("coordsH").textContent = `H: ${(data.heading).toFixed(2)}`;
     }
 })
 
@@ -21,4 +21,5 @@ window.addEventListener('message', (event) => {
             document.getElementById("uiDisplay").classList.remove("activo");
         }
     }
+
 })
